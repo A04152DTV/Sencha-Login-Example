@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Login Example</title>
+
+    <!-- todo: download lib http://www.sencha.com/products/touch/ -->
+    <link rel="stylesheet" href="lib/touch/resources/css/sencha-touch.css" type="text/css">
+    <script type="text/javascript" src="lib/touch/sencha-touch-debug-w-comments.js"></script>
+
+    <!-- Register the app -->
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/config.js"></script>
+
+    <!-- Setup the "routes" or deep linking -->
+    <script type="text/javascript" src="app/routes.js"></script>
+
+    <!-- VIEWS -->
+    <script type="text/javascript" src="app/views/Viewport.js"></script>
+
+    <!-- Login -->
+    <script type="text/javascript" src="app/views/login/Panel.js"></script>
+    <script type="text/javascript" src="app/views/login/components/Form.js"></script>
+    <script type="text/javascript" src="app/views/login/components/Fieldset.js"></script>
+    <script type="text/javascript" src="app/views/login/components/Toolbar.js"></script>
+
+    <!-- Home -->
+    <script type="text/javascript" src="app/views/home/Panel.js"></script>
+
+    <!-- CONTROLLERS -->
+    <!-- Login -->
+    <script type="text/javascript" src="app/controllers/login/view.js"></script>
+    <script type="text/javascript" src="app/controllers/login/authentication.js"></script>
+
+    <!-- Home -->
+    <script type="text/javascript" src="app/controllers/home/view.js"></script>
+
+    <!-- Start the app -->
+    <script type="text/javascript">
+        document.addEventListener("deviceready", app.mainLaunch, false);
+    </script>
+</head>
+<body></body>
+</html>
